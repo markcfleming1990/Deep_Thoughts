@@ -35,6 +35,11 @@ friends: [User]
     thoughts(username: String): [Thought]
     thought(_id: ID!): Thought
   }
+
+  type Mutation {
+  login(email: String!, password: String!): User): User
+  addUser(username: String!, email: String!, passwordL String!): User
+  }
 `;
 
 //export the typeDef
